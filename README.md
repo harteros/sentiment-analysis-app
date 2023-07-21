@@ -18,11 +18,11 @@ The directory structure of the project looks as follows:
 │
 ├── .experiments # Contains the results from training the models (checkpoints, results, etc.)
 │   └── model1
-│       ├── version_0 # Each version encaplulates everything needed to run the model (label encoder, tokenizer, weights, etc.)
+│       ├── version_0 # Each version encapsulates everything needed to run the model (label encoder, tokenizer, weights, etc.)
 │       |   └── ...
 │       └── ...
 ├── .embeddings # Contains the pre-trained embeddings
-││      
+│      
 └── src 
     │
     └── ml  # Contains all the machine learning related code
