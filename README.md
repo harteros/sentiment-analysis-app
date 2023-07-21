@@ -31,7 +31,7 @@ The directory structure of the project looks as follows:
         │   
         ├── datasets # Contains the code for the datasets
         │   
-        ├── engine # Contains the code for training and evaluating the models
+        ├── engines # Contains the code for training and evaluating the models
         │  
         ├── models # Contains the code for the models
         │   
