@@ -1,0 +1,39 @@
+[project]
+name = "sentiment_analysis"
+version = "0.1.0"
+description = ""
+authors = []
+dependencies = [
+    "torch>=2.0.1",
+    "lightning>=2.0.3",
+    "pandas>=2.0.2",
+    "torchtext>=0.15.2",
+    "gensim>=4.3.1",
+    "tensorboard>=2.13.0",
+    "scikit-learn>=1.2.2",
+    "kaggle>=1.5.13",
+    "fastapi>=0.88.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+format = [
+    "black>=23.3.0",
+]
+
+[[tool.pdm.source]]
+url = "https://download.pytorch.org/whl/cu118/"
+verify_ssl = true
+name = "torch"
+
+[tool.black]
+color = true
+line-length = 120
+target-version = ['py310']
+skip-string-normalization = true
+
+[tool.pdm.scripts]
+ml = "python ./src/ml/scripts/train.py"
+tensorboard = "tensorboard --logdir ./.experiments"
+format = "black ."
